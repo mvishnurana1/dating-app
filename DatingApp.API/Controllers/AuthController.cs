@@ -27,6 +27,7 @@ namespace DatingApp.API.Controllers
             this._config = config;
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register(UserForRegisterDto userForRegistration)
         {
